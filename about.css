@@ -1,0 +1,604 @@
+/* =========================================================
+   ABOUT PAGE - GENERAL SETTINGS
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #0c0b0e;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   NAVIGATION BAR
+========================================================= */
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 18px 0 13px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    text-decoration: none;
+    color: #0c0b0e;
+
+    font-size: 13px;
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a i {
+    font-size: 12px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #1d3557;
+}
+
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.about-page {
+    width: 100%;
+}
+
+
+/* =========================================================
+   GENERAL SECTION HEADING
+========================================================= */
+
+.section-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 28px;
+}
+
+.section-label {
+    display: block;
+
+    color: #1d3557;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 6px;
+}
+
+.section-heading h1,
+.section-heading h2 {
+    color: #1d3557;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.heading-line {
+    width: 50px;
+    height: 3px;
+
+    background-color: #1d3557;
+
+    margin: 0 auto;
+}
+
+.section-intro {
+    max-width: 700px;
+
+    margin: 14px auto 0;
+
+    color: #5f6368;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   WHO I AM
+========================================================= */
+
+.who-i-am {
+    background-color: #eef4f8;
+
+    padding: 48px 8% 52px;
+}
+
+.about-content {
+    max-width: 880px;
+
+    margin: 0 auto;
+
+    color: #444444;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+}
+
+.about-content p {
+    margin-bottom: 13px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Bold words remain black */
+
+.about-content strong {
+    color: #0c0b0e;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PROFESSIONAL FOCUS
+========================================================= */
+
+.professional-focus {
+    background-color: #ffffff;
+
+    padding: 30px 8% 35px;
+}
+
+.focus-container {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   PROFESSIONAL FOCUS CARDS
+========================================================= */
+
+.focus-card {
+    background-color: #f8fafc;
+    border: 1px solid #dfe5ea;
+    border-radius: 7px;
+    padding: 16px 12px;
+    text-align: center;
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.focus-card:hover {
+    transform: translateY(-2px);
+
+    border-color: #1d3557;
+
+    box-shadow: 0 5px 14px rgba(29, 53, 87, 0.10);
+}
+
+
+/* =========================================================
+   FOCUS ICON
+========================================================= */
+
+.focus-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e4edf4;
+
+    color: #1d3557;
+
+    border-radius: 50%;
+
+    margin-bottom: 12px;
+}
+
+.focus-icon i {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   FOCUS CARD TEXT
+========================================================= */
+
+.focus-card h3 {
+    color: #1d3557;
+
+    font-size: 14px;
+
+    margin: 0;
+
+    line-height: 1.4;
+}
+
+.focus-card p {
+    color: #62676c;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   WHAT I BRING
+========================================================= */
+
+.what-i-bring {
+    background-color: #eef4f8;
+
+    padding: 48px 8% 52px;
+}
+
+
+/* Center everything */
+
+.what-i-bring .section-heading {
+    text-align: center;
+}
+
+.what-i-bring .section-intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Competency list */
+
+.competency-list {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    border-top: 1px solid #d8e0e6;
+}
+
+
+/* =========================================================
+   INDIVIDUAL COMPETENCY
+========================================================= */
+
+.competency-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 13px 8px;
+
+    border-bottom: 1px solid #d8e0e6;
+
+    text-decoration: none;
+
+    color: #0c0b0e;
+
+    text-align: center;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.competency-item:hover {
+    background-color: #ffffff;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   COMPETENCY ICON
+========================================================= */
+
+.competency-icon {
+    width: 34px;
+    height: 34px;
+
+    min-width: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #dce8f0;
+
+    color: #1d3557;
+
+    border-radius: 50%;
+}
+
+.competency-icon i {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   COMPETENCY NAME
+========================================================= */
+
+.competency-name {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #0c0b0e;
+}
+
+
+/* =========================================================
+   CAREER GOAL
+========================================================= */
+
+.career-direction {
+    background-color: #ffffff;
+
+    padding: 48px 8% 52px;
+}
+
+.career-box {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    background-color: #f4f7fa;
+
+    border-left: 4px solid #1d3557;
+
+    padding: 28px 32px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+.career-box h2 {
+    color: #1d3557;
+
+    font-size: 25px;
+
+    margin-bottom: 14px;
+}
+
+.career-box p {
+    color: #555b60;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 13px;
+}
+
+.career-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background-color: #1d3557;
+
+    text-align: center;
+
+    padding: 18px 15px;
+}
+
+.footer p {
+    color: #ffffff;
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .focus-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 700px;
+    }
+
+    .who-i-am,
+    .professional-focus,
+    .what-i-bring,
+    .career-direction {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 15px 0 11px;
+    }
+
+    .nav-links {
+        gap: 11px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-links a i {
+        display: none;
+    }
+
+
+    .who-i-am,
+    .professional-focus,
+    .what-i-bring,
+    .career-direction {
+        padding: 40px 6% 43px;
+    }
+
+
+    .section-heading {
+        margin-bottom: 24px;
+    }
+
+
+    .section-heading h1,
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+
+    .about-content {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    .about-content p {
+        margin-bottom: 12px;
+    }
+
+
+    .focus-container {
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+
+        max-width: 450px;
+    }
+
+
+    .focus-card {
+        min-height: auto;
+
+        padding: 20px;
+    }
+
+
+    .focus-icon {
+        width: 42px;
+        height: 42px;
+
+        margin-bottom: 11px;
+    }
+
+
+    .focus-card h3 {
+        font-size: 16px;
+    }
+
+
+    .focus-card p {
+        font-size: 13px;
+    }
+
+
+    .competency-list {
+        max-width: 100%;
+    }
+
+
+    .competency-item {
+        padding: 12px 5px;
+    }
+
+
+    .competency-icon {
+        width: 33px;
+        height: 33px;
+
+        min-width: 33px;
+    }
+
+
+    .competency-name {
+        font-size: 13px;
+    }
+
+
+    .career-box {
+        padding: 24px 21px;
+    }
+
+
+    .career-box h2 {
+        font-size: 23px;
+    }
+
+
+    .career-box p {
+        font-size: 13px;
+    }
+
+
+    .footer {
+        padding: 16px 10px;
+    }
+
+}

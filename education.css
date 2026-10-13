@@ -1,0 +1,397 @@
+/* =========================================================
+   EDUCATION PAGE
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #0c0b0e;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 16px 0 11px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0c0b0e;
+    font-size: 13px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #1d3557;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.education-page {
+    width: 100%;
+    background-image: url("image/education-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     
+}
+
+.section-label {
+    display: block;
+    color: #1d3557;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.heading-line {
+    width: 45px;
+    height: 2px;
+    background-color: #1d3557;
+    margin: 0 auto;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 22px;
+}
+
+.section-heading h2 {
+    color: #1d3557;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: 10px auto 0;
+    color: #5f6368;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   EDUCATION HEADER
+========================================================= */
+
+.education-header {
+    background-color: rgba(238, 244, 248, 0.78);
+    text-align: center;
+    padding: 32px 8% 30px;
+}
+
+.education-header h1 {
+    color: #1d3557;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.education-header p {
+    max-width: 620px;
+    margin: 10px auto 0;
+    color: #5f6368;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ACADEMIC BACKGROUND
+========================================================= */
+
+.academic-background {
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 30px 8px 32px;
+}
+
+.degree-card {
+    max-width: 700px;
+    margin: 0 auto;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #dfe5ea;
+    border-radius: 7px;
+
+    padding: 25px 30px;
+
+    text-align: center;
+}
+
+.degree-label {
+    color: #1d3557;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.degree-card h3 {
+    color: #1d3557;
+    font-size: 21px;
+    margin: 6px 0 7px;
+}
+
+.university {
+    color: #555b60;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.academic-result {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 6px 12px;
+
+    background-color: #e8eef3;
+    border-radius: 4px;
+}
+
+.academic-result span {
+    color: #62676c;
+    font-size: 11px;
+}
+
+.academic-result strong {
+    color: #1d3557;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ACADEMIC FOUNDATION
+========================================================= */
+
+.academic-foundation {
+    background-color: rgba(238, 244, 248, 0.78);
+    padding: 32px 8% 35px;
+}
+
+.foundation-container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.foundation-card {
+    background-color: #ffffff;
+
+    border: 1px solid #dfe5ea;
+    border-radius: 7px;
+
+    padding: 17px 20px;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.foundation-card:hover {
+    transform: translateY(-2px);
+
+    border-color: #1d3557;
+
+    box-shadow: 0 5px 14px rgba(29, 53, 87, 0.08);
+}
+
+.foundation-card h3 {
+    color: #1d3557;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.foundation-card p {
+    color: #62676c;
+    font-size: 12.5px;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   PROFESSIONAL RELEVANCE
+========================================================= */
+
+.professional-relevance {
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 32px 8% 35px;
+}
+
+.relevance-box {
+    max-width: 760px;
+    margin: 0 auto;
+
+    background-color: #f4f7fa;
+
+    border-left: 3px solid #1d3557;
+
+    padding: 22px 27px;
+}
+
+.relevance-box h2 {
+    color: #1d3557;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.relevance-box p {
+    color: #555b60;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.relevance-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background-color: #1d3557;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .education-header,
+    .academic-background,
+    .academic-foundation,
+    .professional-relevance {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 14px 0 10px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .education-header,
+    .academic-background,
+    .academic-foundation,
+    .professional-relevance {
+        padding: 28px 6% 30px;
+    }
+
+    .education-header h1 {
+        font-size: 26px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .degree-card {
+        padding: 22px 18px;
+    }
+
+    .degree-card h3 {
+        font-size: 19px;
+    }
+
+    .university {
+        font-size: 13px;
+    }
+
+    .foundation-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .foundation-card {
+        padding: 17px 18px;
+    }
+
+    .relevance-box {
+        padding: 21px 18px;
+    }
+
+    .relevance-box h2 {
+        font-size: 21px;
+    }
+
+    .relevance-box p {
+        font-size: 12.5px;
+    }
+
+    .footer {
+        padding: 14px 10px;
+    }
+}

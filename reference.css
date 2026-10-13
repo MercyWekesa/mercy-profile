@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0 14px;
+    text-align: center;
+}
+
+
+/* Mercy's Name */
+
+.hero h1 {
+    font-size: 38px;
+    color: #1d3557;
+    margin-bottom: 18px;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1d3557;
+}
+
+.nav-links a.active {
+    color: #1d3557;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   REFERENCE SECTION
+========================================================= */
+
+.reference-section {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 70px 30px 80px;
+}
+
+
+/* Header */
+
+.reference-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reference-header h2 {
+    font-size: 38px;
+    color: #1d3557;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.reference-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* =========================================================
+   REFERENCE CARDS
+========================================================= */
+
+.reference-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+}
+
+
+/* Individual Card */
+
+.reference-card {
+    width: 30%;
+    min-height: 245px;
+    background-color: #ffffff;
+    border: 1px solid #e5e9ef;
+    border-radius: 10px;
+    padding: 25px 22px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.reference-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Reference Number */
+
+.reference-number {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #1d3557;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+
+/* Name */
+
+.reference-card h3 {
+    font-size: 20px;
+    color: #1d3557;
+    margin-bottom: 8px;
+}
+
+
+/* Position */
+
+.reference-position {
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+/* Organization */
+
+.reference-organization {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #777;
+    min-height: 42px;
+}
+
+
+/* Contact */
+
+.reference-contact {
+    border-top: 1px solid #eeeeee;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.reference-contact p {
+    font-size: 13px;
+    color: #555;
+}
+
+.reference-contact strong {
+    color: #1d3557;
+}
+
+
+/* =========================================================
+   BOTTOM NOTE
+========================================================= */
+
+.reference-note {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.reference-note p {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer p {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .reference-container {
+        flex-wrap: wrap;
+    }
+
+    .reference-card {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        padding: 0 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .reference-section {
+        padding: 50px 20px;
+    }
+
+    .reference-header h2 {
+        font-size: 30px;
+    }
+
+    .reference-header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .reference-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reference-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}

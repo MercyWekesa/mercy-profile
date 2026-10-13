@@ -1,0 +1,315 @@
+
+/* ==========================================
+   1. GENERAL STYLING
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. NAVIGATION BAR
+========================================== */
+
+header {
+    width: 100%;
+    background-color: #1d3557;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.navbar {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    list-style: none;
+    width: 100%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.88rem;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4c95d;
+}
+
+.nav-links a.active {
+    color: #f4c95d;
+    font-weight: bold;
+    border-bottom: 2px solid #f4c95d;
+}
+
+/* ==========================================
+   3. CERTIFICATIONS PAGE
+========================================== */
+
+.certifications-page {
+    max-width: 1100px;
+    min-height: 75vh;
+    margin: 0 auto;
+    padding: 55px 25px;
+}
+
+/* Centered Page Heading */
+
+.certifications-header {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 45px;
+}
+
+.certifications-header h1 {
+    color: #1d3557;
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.certifications-header p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* ==========================================
+   4. CERTIFICATE CARDS
+========================================== */
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.certificate-card {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #e3e8ef;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 22px rgba(0, 0, 0, 0.1);
+}
+
+/* Certificate Information */
+
+.certificate-details {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.certificate-details h2 {
+    color: #1d3557;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+.certificate-details p {
+    color: #666666;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* ==========================================
+   5. CERTIFICATE BUTTONS
+========================================== */
+
+.certificate-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.certificate-btn,
+.certificate-download {
+    display: inline-block;
+    padding: 11px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.certificate-btn {
+    background-color: #1d3557;
+    color: #ffffff;
+    border: 1px solid #1d3557;
+}
+
+.certificate-btn:hover {
+    background-color: #284b75;
+    border-color: #284b75;
+}
+
+.certificate-download {
+    background-color: #ffffff;
+    color: #1d3557;
+    border: 1px solid #1d3557;
+}
+
+.certificate-download:hover {
+    background-color: #edf1f6;
+}
+
+/* Keyboard Accessibility */
+
+.nav-links a:focus-visible,
+.certificate-actions a:focus-visible {
+    outline: 3px solid #f4c95d;
+    outline-offset: 4px;
+}
+
+/* ==========================================
+   6. FOOTER
+========================================== */
+
+footer {
+    width: 100%;
+    background-color: #1d3557;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   7. TABLET RESPONSIVENESS
+========================================== */
+
+@media (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+}
+
+/* ==========================================
+   8. MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 18px 15px;
+    }
+
+    .logo {
+        white-space: normal;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 8px 14px;
+    }
+
+    .nav-links a {
+        font-size: 0.82rem;
+    }
+
+    .certifications-page {
+        padding: 40px 18px;
+    }
+
+    .certifications-header h1 {
+        font-size: 1.9rem;
+    }
+
+    .certificate-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .certificate-details {
+        padding: 24px;
+    }
+}
+
+/* ==========================================
+   9. SMALL PHONE SCREENS
+========================================== */
+
+@media (max-width: 380px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .certificate-actions {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .certificate-btn,
+    .certificate-download {
+        width: 100%;
+    }
+}

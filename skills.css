@@ -1,0 +1,255 @@
+/* GENERAL */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #0c0b0e;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 16px 0 11px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0c0b0e;
+    font-size: 13px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #1d3557;
+}
+
+
+/* PAGE HEADER */
+
+.skills-header {
+    background-color: #eef4f8;
+    text-align: center;
+    padding: 32px 8% 30px;
+}
+
+.section-label {
+    display: block;
+    color: #1d3557;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+}
+
+.skills-header h1 {
+    color: #1d3557;
+    font-size: 30px;
+    margin: 0 0 8px;
+}
+
+.heading-line {
+    width: 45px;
+    height: 2px;
+    background-color: #1d3557;
+    margin: 0 auto 12px;
+}
+
+.skills-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #62676c;
+    font-size: 13px;
+}
+
+
+/* CORE COMPETENCIES */
+
+.core-competencies {
+    background-color: #ffffff;
+    padding: 32px 8% 38px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    color: #1d3557;
+    font-size: 22px;
+    margin: 0 0 7px;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #62676c;
+    font-size: 12.5px;
+}
+
+
+/* COMPETENCY CARDS */
+
+.competency-container {
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.competency-card {
+    background-color: #f8fafc;
+    border: 1px solid #dfe5ea;
+    border-radius: 7px;
+    padding: 18px 20px;
+    text-align: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.competency-card:hover {
+    transform: translateY(-2px);
+    border-color: #1d3557;
+    box-shadow: 0 5px 14px rgba(29, 53, 87, 0.08);
+}
+
+.competency-card h3 {
+    color: #1d3557;
+    font-size: 15px;
+    margin: 0 0 6px;
+}
+
+.competency-card p {
+    color: #62676c;
+    font-size: 12.5px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* WIDE FINAL CARD */
+
+.wide-card {
+    grid-column: 1 / -1;
+    max-width: 600px;
+    width: 100%;
+    justify-self: center;
+    box-sizing: border-box;
+}
+
+
+/* PROFESSIONAL STRENGTH */
+
+.professional-strength {
+    background-color: #eef4f8;
+    padding: 32px 8% 35px;
+}
+
+.strength-box {
+    max-width: 760px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-left: 3px solid #1d3557;
+    padding: 22px 27px;
+}
+
+.strength-box h2 {
+    color: #1d3557;
+    font-size: 20px;
+    margin: 0 0 9px;
+}
+
+.strength-box p {
+    color: #62676c;
+    font-size: 12.5px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #1d3557;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 11px;
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 14px 0 10px;
+    }
+
+    .nav-links {
+        gap: 10px 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .skills-header {
+        padding: 28px 6% 27px;
+    }
+
+    .skills-header h1 {
+        font-size: 26px;
+    }
+
+    .core-competencies {
+        padding: 28px 6% 32px;
+    }
+
+    .competency-container {
+        grid-template-columns: 1fr;
+    }
+
+    .wide-card {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .professional-strength {
+        padding: 28px 6px 32px;
+    }
+
+    .strength-box {
+        padding: 20px;
+    }
+
+}
